@@ -11,7 +11,7 @@ stop:
 	$(DOCKER_COMPOSE) rm -v --force
 
 build:
-	$(DOCKER_COMPOSE) pull --parallel --ignore-pull-failures
+	$(DOCKER_COMPOSE) pull --ignore-pull-failures
 	$(DOCKER_COMPOSE) build --force-rm --pull
 
 up:
