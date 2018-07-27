@@ -1,0 +1,18 @@
+version: "3"
+
+services:
+  app:
+    networks:
+      default:
+        aliases:
+          - devserver.local
+    build: docker
+    volumes:
+      - .:/app
+
+  database:
+    image: mysql:5.7
+    volumes:
+      - ./docker/my.cnf:/etc/mysql/conf.d/my.cnf
+    environment:
+      MYSQL_ROOT_PASSWORD: root

@@ -1,0 +1,35 @@
+version: "3"
+
+#services:
+#  nginx-proxy:
+#    image: jwilder/nginx-proxy
+#    networks:
+#      - default
+#    ports:
+#      - "80:80"
+#    volumes:
+#      - /var/run/docker.sock:/tmp/docker.sock:ro
+
+#  app:
+#    networks:
+#      default:
+#        aliases:
+#          - devserver.local
+#    environment:
+#      VIRTUAL_HOST: devserver.local
+#      VIRTUAL_PORT: 80
+
+#  database:
+#    ports:
+#      - "3306:3306"
+#
+#  pma:
+#    image: phpmyadmin/phpmyadmin
+#    depends_on:
+#      - database
+#    environment:
+#      PMA_HOST: database
+#      PMA_USER: root
+#      PMA_PASSWORD: root
+#      VIRTUAL_HOST: pma.devserver.local
+#      VIRTUAL_PORT: 80
