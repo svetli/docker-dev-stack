@@ -5,8 +5,8 @@ ENV LANG="en_US.UTF-8" \
     LANGUAGE="en_US.UTF-8" \
     TERM="xterm" \
     DEBIAN_FRONTEND="noninteractive" \
-    NODE_VERSION=8.11.3 \
-    YARN_VERSION=1.7.0 \
+    NODE_VERSION=10.13.0 \
+    YARN_VERSION=1.12.3 \
     COMPOSER_ALLOW_SUPERUSER=1
 
 EXPOSE 80

@@ -16,3 +16,6 @@ services:
       - ./docker/my.cnf:/etc/mysql/conf.d/my.cnf
     environment:
       MYSQL_ROOT_PASSWORD: root
+  
+  redis:
+    image: redis:5.0.1
